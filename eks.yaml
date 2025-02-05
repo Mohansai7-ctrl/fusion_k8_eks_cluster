@@ -5,8 +5,8 @@ metadata:
   region: us-east-1
 managedNodeGroups:  #this managedNodeGroups will ensure as auto scaling so that if one of the created node is deleted/terminated, it will ensure to create another node to balance with desiredCapacity: 3
   - name: expense
-    desiredCapacity: 2
-    instanceType: m5.large
+    desiredCapacity: 1
+    instanceType: t3.micro
     spot: true
     
 
